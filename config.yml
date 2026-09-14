@@ -1,0 +1,40 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/goal-zone
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://stunning-empanada-27d718.netlify.app
+
+collections:
+  - name: "newsroom"
+    label: "Goal Zone Newsroom"
+    files:
+      - name: "news"
+        label: "Daily Football News"
+        file: "data/news.json"
+        fields:
+          - label: "Stories"
+            name: "news"
+            widget: "list"
+            add_to_top: true
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - {label: "Headline", name: "title", widget: "string"}
+              - {label: "Slug", name: "slug", widget: "string", hint: "Use lowercase words separated by hyphens, e.g. arsenal-sign-new-forward"}
+              - {label: "Publish date", name: "date", widget: "datetime"}
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options: ["BREAKING NEWS", "PREMIER LEAGUE", "ARSENAL", "CHELSEA", "LIVERPOOL", "MANCHESTER UNITED", "MANCHESTER CITY", "UGANDA", "AFRICA", "INTERNATIONAL", "TRANSFERS", "RESULTS"]
+              - {label: "Source", name: "source", widget: "string", hint: "Example: Sky Sports, ESPN, Fabrizio Romano"}
+              - {label: "Source URL", name: "sourceUrl", widget: "string", hint: "Link to the original report"}
+              - {label: "Published", name: "published", widget: "boolean", default: true}
+              - {label: "Short summary", name: "summary", widget: "text", hint: "Write this in your own words. Do not copy the source article."}
+              - {label: "Full Goal Zone story", name: "body", widget: "markdown", hint: "Write an original report, context or analysis. Do not reproduce the source article."}
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                required: false

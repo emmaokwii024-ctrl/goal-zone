@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stunning-empanada-27d718.netlify.app/sitemap.xml

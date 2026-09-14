@@ -1,0 +1,35 @@
+GOAL ZONE — DAILY NEWS DASHBOARD SETUP
+
+What is included:
+- /admin/ Decap CMS dashboard
+- /data/news.json editable news database
+- /article.html dynamic story page
+- Homepage loads latest stories from news.json
+
+ONE-TIME NETLIFY/GITHUB SETUP:
+1. Create a GitHub repository named goal-zone.
+2. Upload ALL files in this ZIP to the repository (keep the folder structure).
+3. In admin/config.yml replace:
+   YOUR_GITHUB_USERNAME/goal-zone
+   with your real GitHub username and repository name.
+4. Commit that change.
+5. In Netlify, open the Goal Zone site.
+6. Connect the site to the GitHub repository (Project configuration > Build & deploy > Continuous deployment).
+7. Redeploy from the repository.
+8. Open https://stunning-empanada-27d718.netlify.app/admin/
+9. Log in with the GitHub account that has access to the repository.
+
+DAILY USE:
+- Open /admin/
+- Choose Goal Zone Newsroom > Daily Football News.
+- Add a story.
+- Write an original summary and original Goal Zone article.
+- Add the source and original source URL.
+- Set Published = true.
+- Click Publish.
+- Netlify will automatically deploy the update from GitHub.
+
+IMPORTANT:
+- This setup avoids manually uploading a new ZIP every day.
+- A CMS publish still triggers a normal Netlify deployment because the content is stored in the repository.
+- Do not copy full Sky Sports, ESPN or other publishers' articles. Use original summaries, context and analysis and link to the source.

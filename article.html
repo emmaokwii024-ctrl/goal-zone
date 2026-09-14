@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goal Zone Story</title>
+  <meta name="description" content="Original football news and analysis from Goal Zone.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <meta name="google-site-verification" content="7szxMq27JVDPAcRRdoa2GPZL9Cfpf_7lPcYu7lWVEzY">
+</head>
+<body>
+<header class="top"><div class="container nav"><a class="logo" href="index.html"><span>GOAL</span> ZONE</a><nav><a href="index.html#latest">Latest</a><a href="index.html#uganda">Uganda</a><a href="index.html#transfers">Transfers</a></nav></div></header>
+<main class="section container"><div id="story" class="content-card"><p>Loading story…</p></div></main>
+<script>
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function paragraphs(s){return String(s||'').split(/\n\s*\n/).map(p=>'<p>'+esc(p).replace(/\n/g,'<br>')+'</p>').join('');}
+(async()=>{
+ const slug=new URLSearchParams(location.search).get('slug');
+ const box=document.getElementById('story');
+ try{
+  const r=await fetch('data/news.json?v='+Date.now(),{cache:'no-store'}); if(!r.ok) throw 0;
+  const d=await r.json(); const n=(d.news||[]).find(x=>x.slug===slug && x.published!==false);
+  if(!n){box.innerHTML='<h1>Story not found</h1><p>This story may have been removed or is not published.</p><a class="card-link" href="index.html">← Back to Goal Zone</a>';return;}
+  const date=n.date?new Date(n.date).toLocaleDateString('en-GB',{day:'2-digit',month:'long',year:'numeric'}):'';
+  document.title=n.title+' | Goal Zone';
+  box.innerHTML='<p class="eyebrow">'+esc(n.category)+' • '+esc(date)+'</p><h1>'+esc(n.title)+'</h1><p class="lead">'+esc(n.summary)+'</p>'+paragraphs(n.body)+'<hr><p><strong>Source:</strong> '+esc(n.source||'')+'</p>'+(n.sourceUrl?'<p><a class="card-link" href="'+esc(n.sourceUrl)+'" target="_blank" rel="noopener">Read the original source →</a></p>':'')+'<p><a class="card-link" href="index.html#latest">← Back to latest news</a></p>';
+ }catch(e){box.innerHTML='<h1>News temporarily unavailable</h1><p>Please try again shortly.</p>'}
+})();
+</script>
+</body></html>
