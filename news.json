@@ -1,0 +1,52 @@
+{
+  "news": [
+    {
+      "slug": "chelsea-hull-city-report",
+      "title": "Chelsea held 2-2 by Hull City",
+      "date": "2026-09-14T09:00:00+03:00",
+      "category": "PREMIER LEAGUE",
+      "source": "Sky Sports",
+      "sourceUrl": "https://www.skysports.com/football/chelsea-vs-hull-city/report/559476",
+      "published": true,
+      "summary": "Chelsea were held to a 2-2 draw by Hull City. Goal Zone's original match summary focuses on the key moments and what the result means for both teams.",
+      "body": "Chelsea were held to a 2-2 draw by Hull City in an entertaining Premier League match.\n\nThe visitors showed character to stay in the contest and leave with a point, while Chelsea will look at the chances and defensive moments that prevented them from taking all three points.\n\nGoal Zone's report is an original summary. For the full match details, readers can follow the source below.",
+      "tags": ["Chelsea", "Hull City", "Premier League"]
+    },
+    {
+      "slug": "liverpool-fulham-report",
+      "title": "Liverpool held by Fulham in goalless draw",
+      "date": "2026-09-14T08:30:00+03:00",
+      "category": "PREMIER LEAGUE",
+      "source": "Sky Sports",
+      "sourceUrl": "https://www.skysports.com/football/liverpool-vs-fulham/report/559480",
+      "published": true,
+      "summary": "Liverpool were unable to find a winner against Fulham as the sides shared the points in a 0-0 draw.",
+      "body": "Liverpool were held to a goalless draw by Fulham. The result leaves both sides with a point from a match in which neither team managed to break the deadlock.\n\nFor Goal Zone readers, the main takeaway is a result that highlights the importance of turning possession and chances into goals.\n\nGoal Zone has written this summary independently and links to Sky Sports for the full report.",
+      "tags": ["Liverpool", "Fulham", "Premier League"]
+    },
+    {
+      "slug": "arsenal-sunderland-report",
+      "title": "Arsenal beat Sunderland 2-0",
+      "date": "2026-09-14T08:00:00+03:00",
+      "category": "ARSENAL",
+      "source": "Sky Sports",
+      "sourceUrl": "https://www.skysports.com/football/sunderland-vs-arsenal/559482",
+      "published": true,
+      "summary": "Arsenal earned a 2-0 victory over Sunderland, strengthening their early league position with another clean sheet.",
+      "body": "Arsenal secured a 2-0 win over Sunderland. The result gives Arsenal another positive result and continues a strong defensive start.\n\nThe match also gives Arsenal supporters plenty to discuss as the team builds momentum in the league.\n\nThis is an original Goal Zone summary. Match details are linked to Sky Sports.",
+      "tags": ["Arsenal", "Sunderland", "Premier League"]
+    },
+    {
+      "slug": "manchester-derby-report",
+      "title": "Manchester derby ends goalless",
+      "date": "2026-09-14T07:30:00+03:00",
+      "category": "MANCHESTER",
+      "source": "Sky Sports",
+      "sourceUrl": "https://www.skysports.com/football",
+      "published": true,
+      "summary": "Manchester United and Manchester City shared the points after a 0-0 draw in the Manchester derby.",
+      "body": "Manchester United and Manchester City played out a goalless Manchester derby. Neither side was able to find the decisive finish, so the two teams left with one point each.\n\nGoal Zone will add further context and reaction as verified information becomes available.\n\nFor the latest official score information, readers can check the linked Sky Sports football page.",
+      "tags": ["Manchester United", "Manchester City", "Premier League"]
+    }
+  ]
+}
